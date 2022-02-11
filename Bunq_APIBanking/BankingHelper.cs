@@ -50,7 +50,7 @@ namespace Bunq_APIBanking
 
         }
 
-        public static BunqResponse<int> RequestPaymentFromBunqEmail(string amount, string IssuerName, string email, string requestdescription)
+        public static BunqResponse<int> RequestPaymentFromBunqEmail(string amount, string issuerName, string email, string requestdescription)
         {
             LoadApiContext();
             BunqResponse<int> response = RequestInquiry.Create(
